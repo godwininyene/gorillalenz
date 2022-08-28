@@ -174,18 +174,6 @@ section{ padding: 10rem 0; }
 .container .col-1-of-4:not(:last-child){ margin-right: 2rem; }
 
 
-
-/*
-.col-1-of-2{ flex: 0 0 48%; }
-.col-1-of-3{ 
-	flex: 0 0 32%;
-	margin-bottom: 2rem;
-}
-
-.col-1-of-4 { 
-    flex: 0 0 24%;  
-    margin-bottom: 1.5rem;
-}*/
 .overlay{
 	position: absolute;
 	top: 0;
@@ -247,6 +235,7 @@ section{ padding: 10rem 0; }
 	padding: 5rem;
 	height: 0rem;
 	min-height: 6rem;
+	position: relative;
 	overflow: hidden;
 	transition: height 1s ease-in-out;
 }
@@ -279,6 +268,7 @@ section{ padding: 10rem 0; }
 .nav__list li a:hover{ border-bottom: 2px solid var(--brand-color); }
 
 
+
 /* Mobile Navi */
 .nav .toggle-collapse{
 	position: absolute;
@@ -302,6 +292,19 @@ section{ padding: 10rem 0; }
 }
 
 .collapse{ height: 30rem; }
+
+.collapse-mobile-menu{
+	z-index: 999;
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    background-color: #fff;
+}
+
+.collapse-mobile-menu .nav__list li a:link,
+.collapse-mobile-menu .nav__list li a:visited{
+	color: #000;
+}
 
 
 
@@ -459,20 +462,12 @@ section{ padding: 10rem 0; }
 
 
 /*////////////*********************** SECTION GORILLA LENZ GALLERY  ///////////////////////*/
-/*.gallery::after{ 
-	content: "";
-	clear: both;
-	display: table; 
-}*/
-
-
 .gallery{
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .gallery__img-box{
-	/*float: left;*/
 	width: 28.5rem;
 	height: 28.5rem;
 	margin-bottom: 1rem;
@@ -730,6 +725,13 @@ select:focus{
 	html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
 
 
+	.nav{
+		
+		padding: .5rem;
+		
+	}
+
+
 	.heading-primary--main{ font-size: 3rem; }
 
 	.heading-primary--sub{ font-size: 2rem; }
@@ -842,11 +844,7 @@ select:focus{
 
 	.pop-up-content{ width:100%; }
 
-	.footer__nav-list{
-	    display: block;
-	  /*  padding-left: 2rem;
-	    list-style: none;*/
-	}
+	.footer__nav-list{ display: block; }
 
 }
 
