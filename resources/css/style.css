@@ -290,6 +290,19 @@ section{ padding: 10rem 0; }
 
 .collapse{ height: 30rem; }
 
+.collapse-mobile-menu{
+	z-index: 999;
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    background-color: #fff;
+}
+
+.collapse-mobile-menu .nav__list li a:link,
+.collapse-mobile-menu .nav__list li a:visited{
+	color: #000;
+}
+
 
 
 /* Sticky Navi */
