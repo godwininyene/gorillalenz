@@ -36,6 +36,8 @@ $(document).ready(function(){
 		// Toggle navigation
 		$mainNav.toggleClass("collapse");
 
+		$('.nav__menu').toggleClass("collapse-mobile-menu");
+
 		// Toggle navigation icon
 		if($navIcon.hasClass('fa-navicon')){
 			$navIcon.removeClass('fa-navicon');
