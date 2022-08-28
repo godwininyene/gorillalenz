@@ -723,8 +723,12 @@ select:focus{
 /* Viewport less than or equal to 900px */
 @media screen and (max-width: 56.25em){
 	html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
+
+
 	.nav{ padding: .5rem; }
 	.sticky{ padding: 0; }
+
+
 	.heading-primary--main{ font-size: 3rem; }
 
 	.heading-primary--sub{ font-size: 2rem; }
