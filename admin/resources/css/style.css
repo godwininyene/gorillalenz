@@ -223,6 +223,10 @@ FLEX CONTAINER AND ITEMS*/
 /* Viewport less than or equal to 900px */
 @media screen and (max-width: 56.25em){
     html{ font-size: 56.25%; }/* THIS REPRESENT 9PX 9/16*100=9*/
+    
+    .heading-primary{
+        font-size: 1rem;
+    }
 
     .side-nav{ display: none; }
 
