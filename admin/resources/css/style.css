@@ -265,11 +265,6 @@ FLEX CONTAINER AND ITEMS*/
 /* Viewport less than or equal to 500px */
 @media screen and (max-width: 31.25em){
 
-    .wrapper__item{ flex:0 0 47%; }
+    .wrapper__item{ flex:0 0 90%; }
 }
 
-/* Viewport less than or equal to 320px */
-@media screen and (max-width: 20em){
-
-    .wrapper__item{ flex:0 0 80%; }
-}
